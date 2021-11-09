@@ -1,10 +1,20 @@
+
+.nav-btn:hover {
+    cursor: pointer;
+}
+
+.link-box {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .image-holder {
-    
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: flex-start;
     overflow: hidden;
+    position: relative;   
 }
 
 .container {
@@ -18,4 +28,23 @@
 .container-holder {
     display: flex;
     justify-content: center;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.dot-box .dot.active {
+    background-color: white;
+    border: solid 1px black;
+}
+
+.dot-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
